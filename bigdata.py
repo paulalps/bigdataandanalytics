@@ -31,7 +31,7 @@ for i in range(rounds):
 
         if dado in [1,2]:
             step  = -1
-            floor = executa_passo(floor, -1)
+            floor = executa_passo(floor, -1)            
         elif dado in [3,4,5]:
             step  = 1
             floor = executa_passo(floor, 1)
@@ -40,7 +40,7 @@ for i in range(rounds):
             step  = dado
             floor = executa_passo(floor, dado)
 
-        steps.append(step)
+        steps.append(floor)
 
     roundList.append(steps)
 
