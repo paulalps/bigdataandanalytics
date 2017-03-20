@@ -39,7 +39,10 @@ for i in range(rounds):
             dado  = jogar_dado()
             step  = dado
             floor = executa_passo(floor, dado)
-
+        if floor < 0:
+            floor = 0
+        
+        
         steps.append(floor)
 
     roundList.append(steps)
